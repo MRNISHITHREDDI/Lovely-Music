@@ -11,7 +11,7 @@ from config import (
     OWNER_NAME,
     UPDATES_CHANNEL,
 )
-from program import __version__
+from LovelyMusic import __version__
 from driver.filters import command, other_filters
 from pyrogram import Client, filters
 from pyrogram import __version__ as pyrover
