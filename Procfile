@@ -1,1 +1,1 @@
-worker: python3 lovely.py
+worker: python3 lovelyx.py
