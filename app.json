@@ -1,0 +1,87 @@
+{
+    "name": "Lovely Music Stream Bot",
+    "description": "Telegram bot for Streaming Video & Music trought the Telegram Group Video Chat, powered by pytgcalls and pyrogram",
+    "logo": "https://telegra.ph/file/bfd2b8688249cbfb901b0.jpg",
+    "keywords": [
+        "pytgcalls",
+        "telegram bot",
+        "video stream",
+        "pyrogram"
+    ],
+    "website": "https://t.me/LOVELY_ROBOTS",
+    "repository": "https://github.com/attitudeking1/Lovely-Music",
+    "success_url": "https://t.me/ABOUTVEDMAT",
+    "env": {
+        "API_ID": {
+            "description": "your API_ID from my.telegram.org",
+            "required": true
+        },
+        "API_HASH": {
+            "description": "your API_HASH from my.telegram.org",
+            "required": true
+        },
+        "BOT_TOKEN": {
+            "description": "your bot token from @BotFather",
+            "required": true
+        },
+        "BOT_USERNAME": {
+            "description": "your bot username from @BotFather",
+            "required": true
+        },
+        "BOT_NAME": {
+            "description": "fill with your bot name from @BotFather",
+            "required": true
+        },
+        "ASSISTANT_NAME": {
+            "description": "fill with the assistant username account without @",
+            "required": true
+        },
+        "SESSION_NAME": {
+            "description": "fill with the pyrogram String Session",
+            "required": true
+        },
+        "SUDO_USERS": {
+            "description": "list of user ids to be added to sudo member list, or just fill with your id",
+            "required": true
+        },
+        "GROUP_SUPPORT": {
+            "description": "if you have group, then fill the group username here without @",
+            "required": true,
+            "value": "LOVELYAPPEAL"
+        },
+        "UPDATES_CHANNEL": {
+            "description": "if you have channel, then fill the channel username here without @",
+            "required": true,
+            "value": "LOVELY_ROBOTS"
+        },
+        "OWNER_NAME": {
+            "description": "fill with your telegram account username without @",
+            "required": true,
+            "value": "HEARTLESS204"
+        },
+        "ALIVE_NAME": {
+            "description": "fill with your telegram account nickname/name",
+            "required": true,
+            "value": "Lovely"
+        }
+    },
+    "addons": [],
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        },
+        {
+            "url": "heroku/nodejs"
+        },
+        {
+            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    },
+    "stack": "container"
+}
