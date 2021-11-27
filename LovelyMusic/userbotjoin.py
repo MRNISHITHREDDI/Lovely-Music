@@ -18,7 +18,7 @@ async def join_group(client, message):
         invitelink = await client.export_chat_invite_link(chid)
     except BaseException:
         await message.reply_text(
-            "• **i'm not have permission:**\n\n» ❌ __Add Users__",
+            "<b>tf? Add me as admin of yor group first! Then Use This Command!",
         )
         return
 
@@ -29,6 +29,7 @@ async def join_group(client, message):
 
     try:
         await USER.join_chat(invitelink)
+        await USER.send_message(message.chat.id,"Ok! Lovely Assistant joined here as you requested! Join @LOVELY_ROBOTS for Updates")
     except UserAlreadyParticipant:
         pass
     except Exception as e:
@@ -39,7 +40,7 @@ async def join_group(client, message):
         )
         return
     await message.reply_text(
-        f"✅ **userbot succesfully entered chat**",
+        f"✅ **userbot succesfully entered chat Join @LOVELY_ROBOTS For updates**",
     )
 
 
