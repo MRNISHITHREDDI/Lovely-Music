@@ -37,10 +37,7 @@ async def skip(client, m: Message):
         [
             [
                 InlineKeyboardButton(
-                    "Update channel", url=f"https://t.me/LOVELY_ROBOTS"
-                ),
-                InlineKeyboardButton(
-                    "Support Group", url=f"https://t.me/LOVELYAPPEAL"
+                    "Support Group", url=f"https://t.me/DumperSuppport"
                 ),
             ]
         ]
