@@ -53,8 +53,7 @@ async def play(c: Client, m: Message):
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("Updates", url=f"https://t.me/LOVELY_ROBOTS"),
-                InlineKeyboardButton("Support", url=f"https://t.me/LOVELYAPPEAL"),
+                InlineKeyboardButton("Support", url=f"https://t.me/DumperSuppport"),
             ]
         ]
     )
@@ -111,7 +110,7 @@ async def play(c: Client, m: Message):
                 )
             else:
              try:
-                await suhu.edit("🔄 **Joining vc...**")
+                await suhu.edit("🔄 **Operating...**")
                 await call_py.join_group_call(
                     chat_id,
                     AudioPiped(
@@ -161,7 +160,7 @@ async def play(c: Client, m: Message):
                             )
                         else:
                             try:
-                                await suhu.edit("🔄 **Joining vc...**")
+                                await suhu.edit("🔄 **Operating...**")
                                 await call_py.join_group_call(
                                     chat_id,
                                     AudioPiped(
@@ -212,7 +211,7 @@ async def play(c: Client, m: Message):
                         )
                     else:
                         try:
-                            await suhu.edit("🔄 **Joining vc...**")
+                            await suhu.edit("🔄 **operating...**")
                             await call_py.join_group_call(
                                 chat_id,
                                 AudioPiped(
@@ -242,8 +241,7 @@ async def stream(c: Client, m: Message):
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("Updates", url=f"https://t.me/LOVELY_ROBOTS"),
-                InlineKeyboardButton("Support", url=f"https://t.me/LOVELYAPPEAL"),
+                InlineKeyboardButton("Support", url=f"https://t.me/DumperSuppport"),
             ]
         ]
     )
@@ -303,7 +301,7 @@ async def stream(c: Client, m: Message):
                 )
             else:
                 try:
-                    await suhu.edit("🔄 **Joining vc...**")
+                    await suhu.edit("🔄 **operating...**")
                     await call_py.join_group_call(
                         chat_id,
                         AudioPiped(
