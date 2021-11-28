@@ -82,7 +82,7 @@ async def start_(client: Client, message: Message):
                 ],
                 [
                     InlineKeyboardButton(
-                        "🌐 Source Code", url="https://t.me/TEAM_LOV3LY"
+                        "🌐 Source Code", url="https://t.me/DumperNetwork"
                     )
                 ],
             ]
