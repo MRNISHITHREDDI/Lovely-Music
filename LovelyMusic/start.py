@@ -80,7 +80,8 @@ async def start_(client: Client, message: Message):
                         "📣 Official Channel", url=f"https://t.me/{UPDATES_CHANNEL}"
                     ),
                 ],
-            ),
+             ],
+         ),
         disable_web_page_preview=True,
     )
 
