@@ -43,11 +43,6 @@ async def cbstart(_, query: CallbackQuery):
                         "📣 Update Channel", url=f"https://t.me/{UPDATES_CHANNEL}"
                     ),
                 ],
-                [
-                    InlineKeyboardButton(
-                        "My Lovely Robot", url="t.me/LOVELYR_OBOT"
-                    )
-                ],
             ]
         ),
         disable_web_page_preview=True,
